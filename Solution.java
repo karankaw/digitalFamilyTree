@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Solution {
 	public static void main(String[] args) {
@@ -9,6 +10,13 @@ public class Solution {
 		FamilyTreeNode<Couple> familyTree = new FamilyTreeNode<>(couple);
 
 		System.out.println(familyTree.getData());
+
+		String str;
+		Scanner sc = new Scanner(System.in); 
+
+		while(!(str = sc.nextLine()).equalsIgnoreCase("exit")){
+			System.out.println(str);
+		}
 
 	}
 }

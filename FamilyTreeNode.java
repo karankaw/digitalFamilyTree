@@ -49,7 +49,7 @@ public class FamilyTreeNode<T>{
     }
 
     public String toString(){
-        
+       return null; 
     }
 
 }

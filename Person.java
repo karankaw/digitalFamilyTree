@@ -9,6 +9,6 @@ public class Person{
 	}
 
 	public String toString(){
-		return "Person [" + "name: " + name + ", gender: " + gender + "]";
+		return "Person [" + name + ", " + gender + "]";
 	}
 }
