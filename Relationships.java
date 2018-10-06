@@ -2,17 +2,17 @@ public enum Relationships
 {
 
     FATHER(Gender.MALE),
-    MOTHER(Gender.MALE),
+    MOTHER(Gender.FEMALE),
     BROTHER(Gender.MALE),
-    SISTER(Gender.MALE),
+    SISTER(Gender.FEMALE),
     SON(Gender.MALE),
-    DAUGHTER(Gender.MALE),
-    COUSIN(Gender.MALE),
-    GRANDMOTHER(Gender.MALE),
+    DAUGHTER(Gender.FEMALE),
+    COUSIN(Gender.MALE),//For simplicity
+    GRANDMOTHER(Gender.FEMALE),
     GRANDFATHER(Gender.MALE),
     GRANDSON(Gender.MALE),
-    GRANDAUGHTER(Gender.MALE),
-    AUNT(Gender.MALE),
+    GRANDAUGHTER(Gender.FEMALE),
+    AUNT(Gender.FEMALE),
     UNCLE(Gender.MALE);
 
     Gender gender;
