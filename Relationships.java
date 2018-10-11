@@ -1,6 +1,7 @@
 public enum Relationships
 {
-
+    HUSBAND(Gender.MALE),
+    WIFE(Gender.FEMALE),
     FATHER(Gender.MALE),
     MOTHER(Gender.FEMALE),
     BROTHER(Gender.MALE),
