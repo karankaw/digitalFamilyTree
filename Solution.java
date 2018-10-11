@@ -57,7 +57,7 @@ public class Solution {
     		System.out.println("relation2: " + relation2);
     		System.out.println("name2: " + name2);
 
-    	if( relation1.equalsIgnoreCase(Relationships.HUSBAND.name()) && relation2.equalsIgnoreCase(Relationships.WIFE.name())){
+    	if(relation1.equalsIgnoreCase(Relationships.HUSBAND.name()) && relation2.equalsIgnoreCase(Relationships.WIFE.name())){
 
     			Person person1 = new Person(name1, Gender.MALE);
     			Person person2 = new Person(name2, Gender.FEMALE);
@@ -67,6 +67,11 @@ public class Solution {
 
 				System.out.println(familyTree.getData());
     	}
+
+    	else if(relation1.equalsIgnoreCase(Relationships.MOTHER.name()) && relation2.equalsIgnoreCase(Relationships.SON.name())){
+    		
+    	}
+
 }
 
 
