@@ -1,3 +1,4 @@
+package com.mavericks.digitalFamilyTree;
 public enum Relationships
 {
     HUSBAND(Gender.MALE),

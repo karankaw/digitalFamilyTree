@@ -1,3 +1,5 @@
+package com.mavericks.digitalFamilyTree;
+
 import java.util.Scanner;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
@@ -69,7 +71,26 @@ public class Solution {
     	}
 
     	else if(relation1.equalsIgnoreCase(Relationships.MOTHER.name()) && relation2.equalsIgnoreCase(Relationships.SON.name())){
+    		Person person1 = new Person(name1, Gender.FEMALE);
+			Person person2 = new Person(name2, Gender.MALE);
+			
+			
+			Couple couple = new Couple(person2);
+
+			familyTree.addChild(couple);
+
+			System.out.println(familyTree.getData());
+			
+			System.out.println("name found: " + familyTree.getDescendants(familyTree, "name"));
+    	}
+    	else{
+    		FamilyTreeNode huh = familyTree.getChildren().get(0);
     		
+    		Person person2 = new Person("name", Gender.MALE);
+			
+			Couple couple = new Couple(person2);
+			
+    		huh.addChild(couple);
     	}
 
 }
